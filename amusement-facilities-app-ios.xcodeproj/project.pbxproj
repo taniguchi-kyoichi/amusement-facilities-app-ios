@@ -13,6 +13,7 @@
 		1C78602028E9006200BA9778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C78601F28E9006200BA9778 /* Assets.xcassets */; };
 		1C78602328E9006200BA9778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C78602128E9006200BA9778 /* LaunchScreen.storyboard */; };
 		1C78602B28E905F700BA9778 /* AmusementFacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78602A28E905F700BA9778 /* AmusementFacilitiesViewController.swift */; };
+		C9DCD45A9F82CD334091206C /* Pods_amusement_facilities_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A33EC9D00C3DEBF3C155C65 /* Pods_amusement_facilities_app_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1C78602228E9006200BA9778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C78602428E9006200BA9778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C78602A28E905F700BA9778 /* AmusementFacilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmusementFacilitiesViewController.swift; sourceTree = "<group>"; };
+		9A33EC9D00C3DEBF3C155C65 /* Pods_amusement_facilities_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amusement_facilities_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BBDDA17DC10D6237E6C0C6 /* Pods-amusement-facilities-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amusement-facilities-app-ios.debug.xcconfig"; path = "Target Support Files/Pods-amusement-facilities-app-ios/Pods-amusement-facilities-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		F31F4C33C2921FAE9F39F507 /* Pods-amusement-facilities-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amusement-facilities-app-ios.release.xcconfig"; path = "Target Support Files/Pods-amusement-facilities-app-ios/Pods-amusement-facilities-app-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DCD45A9F82CD334091206C /* Pods_amusement_facilities_app_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B5E2402ED2396C2FF18EDF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A33EC9D00C3DEBF3C155C65 /* Pods_amusement_facilities_app_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1C78600A28E9006000BA9778 = {
 			isa = PBXGroup;
 			children = (
 				1C78601528E9006000BA9778 /* amusement-facilities-app */,
 				1C78601428E9006000BA9778 /* Products */,
+				C7AA4C8F34C6CB835DB45141 /* Pods */,
+				0B5E2402ED2396C2FF18EDF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "amusement-facilities-app";
 			sourceTree = "<group>";
 		};
+		C7AA4C8F34C6CB835DB45141 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9BBDDA17DC10D6237E6C0C6 /* Pods-amusement-facilities-app-ios.debug.xcconfig */,
+				F31F4C33C2921FAE9F39F507 /* Pods-amusement-facilities-app-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C78602728E9006200BA9778 /* Build configuration list for PBXNativeTarget "amusement-facilities-app-ios" */;
 			buildPhases = (
+				6183AB4D0AF4138F99E432DE /* [CP] Check Pods Manifest.lock */,
 				1C78600F28E9006000BA9778 /* Sources */,
 				1C78601028E9006000BA9778 /* Frameworks */,
 				1C78601128E9006000BA9778 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6183AB4D0AF4138F99E432DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-amusement-facilities-app-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C78600F28E9006000BA9778 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		1C78602828E9006200BA9778 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BBDDA17DC10D6237E6C0C6 /* Pods-amusement-facilities-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		1C78602928E9006200BA9778 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31F4C33C2921FAE9F39F507 /* Pods-amusement-facilities-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

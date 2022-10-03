@@ -11,7 +11,7 @@
         <!--Amusement Facilities View Controller-->
         <scene sceneID="Ycd-XA-Tsl">
             <objects>
-                <viewController id="bcb-L6-Rxd" customClass="AmusementFacilitiesViewController" customModule="amusement_facilities_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bcb-L6-Rxd" customClass="AmusementFacilitiesViewController" customModule="amusement_facilities_app_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Qd-so-sKr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +19,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yRX-Aj-rwF">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="amusementFacilitiesTableViewCell" rowHeight="200" id="8sv-xS-J1k" customClass="AmusementFacilitiesTableViewCell" customModule="amusement_facilities_app_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8sv-xS-J1k" id="kkd-f4-htC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ql-C9-kdh">
+                                                    <rect key="frame" x="10" y="0.0" width="65" height="32.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recommendation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-E6-BlJ">
+                                                    <rect key="frame" x="10" y="42.5" width="404" height="157.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5ql-C9-kdh" secondAttribute="trailing" constant="20" symbolic="YES" id="1AM-5q-CPn"/>
+                                                <constraint firstItem="5ql-C9-kdh" firstAttribute="leading" secondItem="HKL-E6-BlJ" secondAttribute="leading" id="5iD-kg-QB1"/>
+                                                <constraint firstItem="5ql-C9-kdh" firstAttribute="leading" secondItem="kkd-f4-htC" secondAttribute="leading" constant="10" id="Ib0-gM-zhu"/>
+                                                <constraint firstItem="5ql-C9-kdh" firstAttribute="top" secondItem="kkd-f4-htC" secondAttribute="top" id="OYb-WP-AtH"/>
+                                                <constraint firstAttribute="bottom" secondItem="HKL-E6-BlJ" secondAttribute="bottom" id="h13-pY-DET"/>
+                                                <constraint firstItem="HKL-E6-BlJ" firstAttribute="top" secondItem="5ql-C9-kdh" secondAttribute="bottom" constant="10" id="ogf-io-gpH"/>
+                                                <constraint firstAttribute="trailing" secondItem="HKL-E6-BlJ" secondAttribute="trailing" id="xNz-E4-c0o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLable" destination="5ql-C9-kdh" id="lkq-hh-6Xk"/>
+                                            <outlet property="recommendationLabel" destination="HKL-E6-BlJ" id="ioQ-2e-anR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oYy-Dw-BNT"/>
@@ -36,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uw-3R-n2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="627" y="-542"/>
+            <point key="canvasLocation" x="624.63768115942037" y="-542.41071428571422"/>
         </scene>
     </scenes>
     <resources>
